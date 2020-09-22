@@ -1,0 +1,74 @@
+action_factory: null
+action_names:
+- utter_default
+- utter_greet
+- utter_on_it
+- utter_cocky
+- utter_field
+- action_general_query
+- action_specific_query
+- action_restarted
+actions:
+- utter_default
+- utter_greet
+- utter_on_it
+- utter_cocky
+- utter_field
+- actions.ActionGeneralQuery
+- actions.ActionSpecificQuery
+- actions.ActionRestartedQuery
+config:
+  store_entities_as_slots: true
+entities:
+- quantity
+- quality
+- howmuch
+- country
+- quantifier
+- field
+intents:
+- greet
+- quant_price
+- specific
+- inform
+- affirm
+- deny
+slots:
+  country:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  field:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  howmuch:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  quality:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  quantifier:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  quantity:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_cocky:
+  - text: Seems easy enough
+  - text: Alright
+  - text: hmmmmm
+  - text: '*yawns* give me a real challenge next time'
+  utter_default:
+  - text: come again?
+  - text: I didn't quite get you
+  - text: my master hasn't trained me properly
+  utter_field:
+  - text: should i filter according to price or score?
+  utter_greet:
+  - text: hey there!
+  - text: Howdy partner
+  - text: hi!
+  utter_on_it:
+  - text: I am on it
+  - text: okay
+topics: []

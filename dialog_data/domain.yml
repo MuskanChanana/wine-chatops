@@ -1,0 +1,59 @@
+intents:
+- greet
+- quant_price
+- specific
+- inform
+- affirm
+- deny
+
+entities:
+- quantity
+- quality
+- howmuch
+- country
+- quantifier
+- field
+
+slots:
+  quality:
+    type: text
+  quantity:
+    type: text
+  howmuch:
+    type: text
+  country:
+    type: text
+  quantifier:
+    type: text
+  field:
+    type: text
+
+templates:
+  utter_greet:
+    - "hey there!"
+    - "Howdy partner"
+    - "hi!"
+  utter_default:
+    - "come again?"
+    - "I didn't quite get you"
+    - "my master hasn't trained me properly"
+  utter_cocky:
+    - "Seems easy enough"
+    - "Alright"
+    - "hmmmmm"
+    - "*yawns* give me a real challenge next time"
+  utter_on_it:
+    - "I am on it"
+    - "okay"
+  utter_field:
+    - "should i filter according to price or score?"
+
+actions:
+  - utter_default
+  - utter_greet
+  - utter_on_it
+  - utter_cocky
+  - utter_field
+  - actions.ActionGeneralQuery
+  - actions.ActionSpecificQuery
+  - actions.ActionRestartedQuery

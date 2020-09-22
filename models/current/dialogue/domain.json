@@ -1,0 +1,32 @@
+{
+  "states": [
+    "intent_greet",
+    "intent_quant_price",
+    "intent_specific",
+    "intent_inform",
+    "intent_affirm",
+    "intent_deny",
+    "entity_quantity",
+    "entity_quality",
+    "entity_howmuch",
+    "entity_country",
+    "entity_quantifier",
+    "entity_field",
+    "slot_country_0",
+    "slot_field_0",
+    "slot_howmuch_0",
+    "slot_quality_0",
+    "slot_quantifier_0",
+    "slot_quantity_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_utter_default",
+    "prev_utter_greet",
+    "prev_utter_on_it",
+    "prev_utter_cocky",
+    "prev_utter_field",
+    "prev_action_general_query",
+    "prev_action_specific_query",
+    "prev_action_restarted"
+  ]
+}

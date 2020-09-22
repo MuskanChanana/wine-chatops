@@ -1,0 +1,29 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "howmuch",
+        "country",
+        "field",
+        "quantifier",
+        "quantity",
+        "quality"
+      ]
+    },
+    "action_restarted": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.9.3",
+  "max_histories": [
+    3,
+    5,
+    null
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy"
+  ]
+}

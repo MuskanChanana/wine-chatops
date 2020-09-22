@@ -1,0 +1,5 @@
+tornado>=4.5.3
+rasa-core==0.9.3
+rasa-nlu==0.12.3
+pandas==0.22.0
+spacy==2.0.11
