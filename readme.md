@@ -55,4 +55,4 @@ suggest some wine whose score greater than or equal to 8 in montenegro
 #### Demo
 Run server.py and head to http://localhost:8080/
 
-Made with :love: by Sheryl
+Made with :heart: by Sheryl
